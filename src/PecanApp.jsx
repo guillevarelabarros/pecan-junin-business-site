@@ -1,7 +1,10 @@
+import { AppRouter } from './router/AppRouter';
+
+
 export const PecanApp = () => {
   return (
     <>
-       <h1>PecanApp</h1>
+       <AppRouter/>
     </>
   )
 }
