@@ -15,6 +15,15 @@ export const Navbar = () => {
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
+
+
+                    <NavLink 
+                        className={ ({isActive}) => `nav-item nav-link ${isActive} ? 'active' : '' ` }
+                        to="/home"
+                    >
+                        Home
+                    </NavLink>
+
                     <NavLink 
                         className={ ({isActive}) => `nav-item nav-link ${isActive} ? 'active' : '' ` }
                         to="/abaut"
@@ -24,10 +33,27 @@ export const Navbar = () => {
 
                     <NavLink 
                         className={ ({isActive}) => `nav-item nav-link ${isActive} ? 'active' : '' ` }
-                        to="/home"
+                        to="/promociones"
                     >
-                        Home
+                        Promociones
                     </NavLink>
+
+                    <NavLink 
+                        className={ ({isActive}) => `nav-item nav-link ${isActive} ? 'active' : '' ` }
+                        to="/howtobuy"
+                    >
+                        ComoComprar
+                    </NavLink>
+
+
+                    <NavLink 
+                        className={ ({isActive}) => `nav-item nav-link ${isActive} ? 'active' : '' ` }
+                        to="/contacto"
+                    >
+                        Contacto
+                    </NavLink>
+
+
                 </div>
             </div>
 
