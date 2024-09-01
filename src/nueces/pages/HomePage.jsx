@@ -1,7 +1,6 @@
 export const HomePage = () => {
 
   const pecanImageUrl = `/assets/pecanes/logo.png`;
-  const backgroundImageUrl = `/assets/pecanes/fondo.jpg`;
 
   return (
     <div className="container mt-5">
