@@ -32,9 +32,9 @@ export const HomePage = () => {
         <div className="row">
           <div className="col-md-4">
             <div className="card">
-              <img src="imagen-bolsa-500g.jpg" className="card-img-top" alt="Bolsa de 500g" />
+              <img src="/assets/pecanes/250gr.jpg" className="card-img-top" alt="Bolsa de 500g" />
               <div className="card-body text-center">
-                <h5 className="card-title">Bolsa de 500g</h5>
+                <h5 className="card-title">Bolsa de 250g</h5>
                 <p className="card-text">Perfecta para pequeñas familias o como un delicioso snack.</p>
                 <a href="/comprar" className="btn btn-primary">Comprar</a>
               </div>
@@ -42,9 +42,9 @@ export const HomePage = () => {
           </div>
           <div className="col-md-4">
             <div className="card">
-              <img src="imagen-bolsa-1kg.jpg" className="card-img-top" alt="Bolsa de 1kg" />
+              <img src="/assets/pecanes/500gr.jpg" className="card-img-top" alt="Bolsa de 1kg" />
               <div className="card-body text-center">
-                <h5 className="card-title">Bolsa de 1kg</h5>
+                <h5 className="card-title">Bolsa de 500gr</h5>
                 <p className="card-text">Ideal para quienes disfrutan de las nueces en sus recetas favoritas.</p>
                 <a href="/comprar" className="btn btn-primary">Comprar</a>
               </div>
@@ -52,7 +52,7 @@ export const HomePage = () => {
           </div>
           <div className="col-md-4">
             <div className="card">
-              <img src="imagen-bolsa-5kg.jpg" className="card-img-top" alt="Bolsa de 5kg" />
+              <img src="/assets/pecanes/5kg.jpg" className="card-img-top" alt="Bolsa de 5kg" />
               <div className="card-body text-center">
                 <h5 className="card-title">Bolsa de 5kg</h5>
                 <p className="card-text">Para los verdaderos amantes de las nueces, perfecto para grandes familias.</p>
