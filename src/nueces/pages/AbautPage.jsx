@@ -3,7 +3,7 @@ import React from 'react';
 
 export const AbautPage = () => {
 
-  const pecanImageUrl = `/assets/pecanes/pecanes.png`;
+  const pecanImageUrl = `/assets/pecanes/logo.png`;
 
   return (
     <div className="container">
