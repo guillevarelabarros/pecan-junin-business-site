@@ -1,14 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom";
 
-import './styles.css'
-import { PecanApp } from './PecanApp';
+import { PecanJuninApp } from './PecanJuninApp.jsx';
+import './styless.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <BrowserRouter>
-      <PecanApp />
+      <PecanJuninApp />
     </BrowserRouter>
-  </React.StrictMode>,
+  </StrictMode>
 )

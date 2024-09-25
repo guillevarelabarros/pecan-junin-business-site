@@ -1,9 +1,6 @@
+
 import { Navigate, Route, Routes } from 'react-router';
-
-
-
-import { HomePage, AbautPage, PromocionesPage, ContactPage, HowToBuy } from '../nueces';
-import { LoginPage } from '../auth';
+import { AboutPage, ContactPage, FacebookButton, HomePage, InstagramButton, PromotionsPage, WhatsAppButton } from '../pecanjunin';
 import { Navbar } from '../ui';
 
 
@@ -11,22 +8,19 @@ export const AppRouter = () => {
   return (
     <>
 
-      <Navbar/>
+          <Navbar/>      
+          <Routes>
+            <Route path="home" element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="promotions" element={<PromotionsPage/>} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="/*" element={<Navigate to="/home"/>} />
+          </Routes>
+          <WhatsAppButton/>
+          <InstagramButton/>
+          <FacebookButton/>
+          
 
-      <Routes>
-        <Route path="home" element={ <HomePage/> } />
-        <Route path="abaut" element={ <AbautPage/> } />
-        <Route path="promociones" element={ <PromocionesPage/> } />
-        <Route path="howtobuy" element={ <HowToBuy/> } />
-        <Route path="contacto" element={ <ContactPage/> } />
-        <Route path="login" element={ <LoginPage/> } />
-
-
-        <Route path="/" element={ <Navigate to="/home" /> } />
-
-      </Routes>
-
-    
     </>
   )
 }
