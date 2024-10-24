@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Importa el icono de Instagram
+import './InstagramButton.css'
 
 export const InstagramButton = () => {
   return (

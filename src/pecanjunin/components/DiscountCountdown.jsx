@@ -1,3 +1,4 @@
+import './DiscountCountdown.css';
 import { useEffect, useState } from 'react';
 
 export const DiscountCountdown = () => {

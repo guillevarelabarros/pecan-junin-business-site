@@ -11,9 +11,9 @@ export const AppRouter = () => {
           <Navbar/>      
           <Routes>
             <Route path="home" element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="promotions" element={<PromotionsPage/>} />
-            <Route path="contact" element={<ContactPage />} />
+            {/* <Route path="about" element={<AboutPage />} /> */}
+            {/* <Route path="promotions" element={<PromotionsPage/>} /> */}
+            {/* <Route path="contact" element={<ContactPage />} /> */}
             <Route path="/*" element={<Navigate to="/home"/>} />
           </Routes>
           <WhatsAppButton/>

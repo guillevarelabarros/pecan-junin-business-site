@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'; // Importa el icono de Facebook
+import './FacebookButton.css';
 
 export const FacebookButton = () => {
   return (

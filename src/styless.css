@@ -1,81 +1,7 @@
-/* BOTON DE WHATS APP */
-
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: transform 0.8s ease;
-}
-
-.whatsapp:hover {
-  transform: scale(1.3);
-  margin: 5px;
-}
-
-/* PÁGINA "SOBRE NOSOTROS" TITULO MÁS GRANDE */
-
-.sobre-nosotros h1 {
-  font-weight: 700;
-}
-
-/* BOTON DE INSTAGRAM */
-
-.instagram {
-  position: fixed;
-  bottom: 100px; /* Ajusta para que no se superponga con el botón de WhatsApp */
-  right: 20px;
-  background-color: #e1306c; /* Color de Instagram */
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: transform 0.8s ease;
-}
-
-.instagram:hover {
-  transform: scale(1.3);
-  margin: 5px;
-}
-
-/* BOTON DE FACEBOOK*/
-
-.facebook {
-  position: fixed;
-  bottom: 180px; /* Ajusta para que no se superponga con los otros botones */
-  right: 20px;
-  background-color: #4267b2; /* Color de Facebook */
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: transform 0.8s ease;
-}
-
-.facebook:hover {
-  transform: scale(1.3);
-  margin: 5px;
-}
-
 /* PAGINA DE "HOME" */
 
 /* Fondo marrón en el inicio*/
+
 .bg-brown {
   background: #5b3a29;
 }
@@ -114,7 +40,7 @@
   color: black;
 }
 
-/*Fondo en la sección de las fotos*/
+/*Fondo en la sección de las fotos con Nuestros Productos */
 
 .section-bg-css {
   background-color: #f8f9fa; /* Gris personalizado */
@@ -124,28 +50,4 @@
 .section-bg2-css {
   background-color: #e9ecef; /* Gris personalizado */
   padding: 20px; /* Opcional, para darle más espacio */
-}
-
-/* COMPONENTE BOTÓN DE DESCUENTO */
-
-.bg-light {
-  background-color: #f8f9fa;
-}
-
-.text-success {
-  color: #28a745;
-}
-
-.text-danger {
-  color: #dc3545;
-}
-
-.btn-success {
-  background-color: #28a745;
-  border-color: #28a745;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
 }

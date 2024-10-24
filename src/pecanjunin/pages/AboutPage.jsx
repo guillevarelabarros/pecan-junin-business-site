@@ -3,7 +3,7 @@ export const AboutPage = () => {
   const pecanImageUrl = `/assets/pecanes/logo2png.png`;
 
   return (
-    <div className="container sobre-nosotros">
+    <div className="container">
       <div className="row my-5">
         <div className="col-md-4">
           <img src={pecanImageUrl} className="img-fluid rounded mt-5" alt="Campo de nueces" />

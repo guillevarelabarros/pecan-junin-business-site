@@ -9,16 +9,16 @@ export const Navbar = () => {
                 <span className="ml-2 text-nowrap fs-4">Pecan Junin!</span>
             </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
-                    <NavLink 
+            {/* <div className="navbar-collapse">
+                <div className="navbar-nav"> */}
+                    {/* <NavLink 
                         className={({ isActive }) => `nav-item nav-link fs-5 ${isActive ? 'active' : ''} text-nowrap`}
                         to="/home"
                     >
                         Home
-                    </NavLink>
+                    </NavLink> */}
 
-                    <NavLink 
+                    {/* <NavLink 
                         className={({ isActive }) => `nav-item nav-link fs-5 ${isActive ? 'active' : ''} text-nowrap`}
                         to="/about"
                     >
@@ -37,9 +37,9 @@ export const Navbar = () => {
                         to="/contact"
                     >
                         Contacto
-                    </NavLink>
-                </div>
-            </div>
+                    </NavLink> */}
+                {/* </div>
+            </div> */}
 
           {/* CÓDIGO PARA AGREGAR UN USUARIO Y BOTON DE LOG OUT */}
           
