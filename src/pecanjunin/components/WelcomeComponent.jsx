@@ -1,62 +1,73 @@
+import React from 'react';
+import { Box, Typography, Button, Stack } from '@mui/material';
+
 export const WelcomeComponent = () => {
   return (
-    <>
-      <div className="jumbotron text-center bg-brown mb-5 p-4">
-        <h1 className="display-4 text-white">¡Bienvenidos a Pecan Junín!</h1>
-        <p className="lead text-white fs-2">Nueces Pecan, frescas y deliciosas</p>
-        <p className="text-white fs-4">
-          Directo de nuestro campo a tu mesa - Calidad garantizada en cada nuez.
-        </p>
-        <hr className="my-4 text-white" />
-        <div className="d-flex justify-content-center gap-3">
-          <a href="#productos" 
-             className="btn btn-outline-light btn-lg fs-5 px-4 py-2">
-            Ver Nueces
-          </a>
-          <a href="https://wa.me/542364658923" 
-             className="btn btn-danger btn-lg fs-5 px-4 py-2" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            ¡Comprar Ahora!
-          </a>
-        </div>
-      </div>
-    </>
+    <Box
+      sx={{
+        bgcolor: 'primary.main',
+        color: 'white',
+        py: 6,
+        px: 4,
+        textAlign: 'center',
+        borderRadius: 2,
+        boxShadow: 3,
+      }}
+    >
+      <Typography 
+        variant="h3" 
+        component="h1" 
+        gutterBottom
+        sx={{ fontWeight: 'bold', letterSpacing: 1 }}
+      >
+        ¡Bienvenidos a Pecan Junín!
+      </Typography>
+      <Typography 
+        variant="h5" 
+        component="p" 
+        sx={{ mb: 2 }}
+      >
+        Nueces Pecan, frescas y deliciosas
+      </Typography>
+      <Typography 
+        variant="body1" 
+        component="p" 
+        sx={{ fontSize: '1.25rem', mb: 4 }}
+      >
+        Directo de nuestro campo a tu mesa - Calidad garantizada en cada nuez.
+      </Typography>
+      <Stack 
+        direction="row" 
+        spacing={2} 
+        justifyContent="center"
+      >
+        <Button 
+          variant="outlined" 
+          color="inherit" 
+          size="large" 
+          href="#productos"
+          sx={{
+            borderColor: 'white',
+            color: 'white',
+            ':hover': {
+              bgcolor: 'white',
+              color: 'primary.main',
+            },
+          }}
+        >
+          Ver Nueces
+        </Button>
+        <Button 
+          variant="contained" 
+          color="secondary" 
+          size="large" 
+          href="https://wa.me/542364658923" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          ¡Comprar Ahora!
+        </Button>
+      </Stack>
+    </Box>
   );
-}
-
-
-// export const WelcomeComponent = () => {
-//   return (
-//     <>
-//       <div className="jumbotron text-center bg-brown mb-5 p-4">
-//         <h1 className="display-4 text-white">¡Bienvenidos a Pecan Junín!</h1>
-//         <p className="lead text-white fs-2">Nueces Pecan, frescas y deliciosas</p>
-//         <p className="text-white fs-4">
-//           Directo de nuestro campo en Junín, Argentina, a tu mesa. Calidad garantizada en cada nuez.
-//         </p>
-//         <hr className="my-4 text-white" />
-//         <a href="https://wa.me/542364658923" 
-//            className="btn btn-danger btn-lg fs-5 px-4 py-2" 
-//            target="_blank" 
-//            rel="noopener noreferrer">
-//           ¡Comprar Ahora!
-//         </a>
-//       </div>
-//     </>
-//   );
-// }
-
-// export const WelcomeComponent = () => {
-//   return (
-//     <>
-//         <div className="jumbotron  text-center bg-brown mb-5 p-4  ">
-//           <h1 className="display-4 text-white">¡Bienvenidos a Pecan Junín..!</h1>
-//           <p className="lead text-white fs-2">Calidad y tradición en cada nuez</p>
-//           <p className="text-white fs-4">Descubre nuestras deliciosas Nueces Pecan cultivadas en Junín, Argentina. Directas del campo a tu mesa.</p>
-//           <hr className="my-4 text-white" />
-//           <a href="https://wa.me/542364658923" className="btn btn-danger fs-5" target="_blank" rel="noopener noreferrer">¡QUIERO COMPRAR NUECES!</a>
-//         </div>
-//     </>
-//   )
-// }
+};

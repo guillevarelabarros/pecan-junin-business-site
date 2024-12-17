@@ -1,21 +1,35 @@
-export const ContactComponent = () => { 
+import React from 'react';
+import { Box, Button, Typography } from '@mui/material';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
+export const ContactComponent = () => {
   return (
-    <>
-      <section>
-        <div className="text-center mt-5 mb-5">
-          <h2 className="titulo-grande-css">Contáctanos</h2>
-          <h3 className="mt-4 mb-3">¿Querés comprar nuestras deliciosas nueces?</h3>
-          <p className="fs-5">Haz clic en el botón para enviarnos un mensaje en WhatsApp.</p>
-          <a 
-            href="https://wa.me/542364658923" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn btn-success btn-lg mt-3"
-          >
-            Enviar mensaje por WhatsApp
-          </a>
-        </div>
-      </section>
-    </>
+    <Box 
+      component="section" 
+      textAlign="center" 
+      py={5}
+    >
+      <Typography variant="h4" gutterBottom fontWeight="bold">
+        Contáctanos
+      </Typography>
+      <Typography variant="h5" color="textSecondary" gutterBottom>
+        ¿Querés comprar nuestras deliciosas nueces?
+      </Typography>
+      <Typography variant="body1" paragraph>
+        Haz clic en el botón para enviarnos un mensaje en WhatsApp.
+      </Typography>
+      <Button
+        variant="contained"
+        color="success"
+        href="https://wa.me/542364658923"
+        target="_blank"
+        rel="noopener noreferrer"
+        size="large"
+        startIcon={<WhatsAppIcon />}
+      >
+        Enviar mensaje por WhatsApp
+      </Button>
+    </Box>
   );
-}
+};
+

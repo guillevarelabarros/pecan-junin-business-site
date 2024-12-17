@@ -1,16 +1,17 @@
-import './DiscountCountdown.css';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Box, Typography, Button, Paper } from '@mui/material';
+// import './DiscountCountdown.css';
 
 export const DiscountCountdown = () => {
-  const [timeLeft, setTimeLeft] = useState(5 * 60); // 15 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(5 * 60); // 5 minutos en segundos
   const [discountExpired, setDiscountExpired] = useState(false);
-  const [countdownStarted, setCountdownStarted] = useState(false); // Nuevo estado para controlar el inicio del contador
+  const [countdownStarted, setCountdownStarted] = useState(false); // Control del inicio del contador
 
   useEffect(() => {
     const handleScroll = () => {
       // Verificar si el usuario ha llegado al final de la página
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        setCountdownStarted(true); // Iniciar el contador
+        setCountdownStarted(true);
       }
     };
 
@@ -29,11 +30,11 @@ export const DiscountCountdown = () => {
 
       return () => clearInterval(timer);
     } else if (timeLeft <= 0) {
-      setDiscountExpired(true); // Establecer el descuento como expirado cuando el tiempo se acabe
+      setDiscountExpired(true);
     }
-  }, [timeLeft, countdownStarted]); // Agregar countdownStarted a las dependencias
+  }, [timeLeft, countdownStarted]);
 
-  // Función para formatear el tiempo de segundos a mm:ss
+  // Formatear el tiempo de segundos a mm:ss
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
@@ -41,74 +42,85 @@ export const DiscountCountdown = () => {
   };
 
   return (
-    <section className="text-center bg-light mt-5 mb-5 py-3 border border-2 border-danger">
-      {!discountExpired ? (
-        <>
-          <h2 className="titulo-grande-css mb-4"><span className="highlight-css">¡Descuento exclusivo!</span></h2>
-          <h4 className="text-success"><span className="highlight-subtitulo-css">¡40% de descuento</span> en tu compra si nos escribes dentro de los próximos <span className="highlight-subtitulo-css">5 minutos!</span></h4>
-          <p className="fs-5">Escríbenos por WhatsApp para aprovechar este descuento exclusivo.</p>
-          <div className="fs-3 fw-bold text-danger">Tiempo restante: {formatTime(timeLeft)}</div>
-          <a href="https://wa.me/542364658923" className="btn btn-success mt-3 fs-5" target="_blank" rel="noopener noreferrer">¡Quiero mi descuento!</a>
-        </>
-      ) : (
-        <>
-          <h4 className="text-danger">Lo sentimos, el descuento ha expirado.</h4>
-          <p className="fs-5">De todos modos, ¡contáctanos para conocer otras ofertas!</p>
-          <a href="https://wa.me/542364658923" className="btn btn-primary mt-3 fs-5" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
-        </>
-      )}
-    </section>
+    <Box 
+      component="section"
+      textAlign="center"
+      bgcolor="background.paper"
+      py={4}
+      mt={5}
+      mb={5}
+      mx="auto"
+      maxWidth="600px"
+
+    >
+      <Paper elevation={3} sx={{ padding: 3, backgroundColor: discountExpired ? '#ffe5e5' : '#e8f5e9' }}>
+        {!discountExpired ? (
+          <>
+            <Typography 
+              variant="h4" 
+              color="primary" 
+              gutterBottom
+              fontWeight="bold"
+            >
+              ¡Descuento exclusivo!
+            </Typography>
+            <Typography 
+              variant="h6" 
+              color="secondary"
+              gutterBottom
+            >
+              ¡40% de descuento en tu compra si nos escribes dentro de los próximos <strong>5 minutos!</strong>
+            </Typography>
+            <Typography variant="body1" mb={2}>
+              Escríbenos por WhatsApp para aprovechar este descuento exclusivo.
+            </Typography>
+            <Typography 
+              variant="h5" 
+              color="error" 
+              fontWeight="bold" 
+              mb={3}
+            >
+              Tiempo restante: {formatTime(timeLeft)}
+            </Typography>
+            <Button 
+              variant="contained" 
+              color="success" 
+              href="https://wa.me/542364658923" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              size="large"
+            >
+              ¡Quiero mi descuento!
+            </Button>
+          </>
+        ) : (
+          <>
+            <Typography 
+              variant="h4" 
+              color="error" 
+              gutterBottom
+              fontWeight="bold"
+            >
+              Lo sentimos, el descuento ha expirado.
+            </Typography>
+            <Typography variant="body1" mb={2}>
+              De todos modos, ¡contáctanos para conocer otras ofertas!
+            </Typography>
+            <Button 
+              variant="contained" 
+              color="primary" 
+              href="https://wa.me/542364658923" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              size="large"
+            >
+              Contactar por WhatsApp
+            </Button>
+          </>
+        )}
+      </Paper>
+    </Box>
   );
 };
-
-
-
-// import { useEffect, useState } from 'react';
-
-// export const DiscountCountdown = () => {
-//   const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutes in seconds
-//   const [discountExpired, setDiscountExpired] = useState(false);
-
-//   useEffect(() => {
-//     if (timeLeft > 0) {
-//       const timer = setInterval(() => {
-//         setTimeLeft(timeLeft - 1);
-//       }, 1000);
-
-//       return () => clearInterval(timer);
-//     } else {
-//       setDiscountExpired(true); // Set discount as expired when time runs out
-//     }
-//   }, [timeLeft]);
-
-//   // Function to format time from seconds to mm:ss
-//   const formatTime = (seconds) => {
-//     const minutes = Math.floor(seconds / 60);
-//     const remainingSeconds = seconds % 60;
-//     return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
-//   };
-
-//   return (
-
-//     <section className="text-center bg-light mt-5 mb-5 py-3 border border-2 border-danger">
-//       {!discountExpired ? (
-//         <>
-//           <h2 className="titulo-grande-css mb-4"><span className="highlight-css">¡Descuento exclusivo!</span></h2>
-//           <h4 className="text-success"><span className="highlight-subtitulo-css">¡40% de descuento</span> en tu compra si nos escribes dentro de los próximos <span className="highlight-subtitulo-css">15 minutos!</span></h4>
-//           <p className="fs-5">Escríbenos por WhatsApp para aprovechar este descuento exclusivo.</p>
-//           <div className="fs-3 fw-bold text-danger">Tiempo restante: {formatTime(timeLeft)}</div>
-//           <a href="https://wa.me/542364658923" className="btn btn-success mt-3 fs-5" target="_blank" rel="noopener noreferrer">¡Quiero mi descuento!</a>
-//         </>
-//       ) : (
-//         <>
-//           <h4 className="text-danger">Lo sentimos, el descuento ha expirado.</h4>
-//           <p className="fs-5">De todos modos, ¡contáctanos para conocer otras ofertas!</p>
-//           <a href="https://wa.me/542364658923" className="btn btn-primary mt-3 fs-5" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
-//         </>
-//       )}
-//     </section>
-//   );
-// };
-
 
 
