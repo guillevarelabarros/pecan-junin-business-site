@@ -39,7 +39,7 @@ const PecanCard = ({ title, detail, image }) => {
         <CardMedia
           component="img"
           sx={{
-            borderRadius: 2,
+            borderRadius: 1,
             padding: 0,
             objectFit: 'cover',
             maxWidth: 300,
