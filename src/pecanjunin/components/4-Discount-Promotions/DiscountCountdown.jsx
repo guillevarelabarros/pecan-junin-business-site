@@ -50,10 +50,18 @@ export const DiscountCountdown = () => {
       mt={5}
       mb={5}
       mx="auto"
-      maxWidth="600px"
-
+      maxWidth={{ xs: '100%', sm: '600px' }}  // Responsivo
     >
-      <Paper elevation={3} sx={{ padding: 3, backgroundColor: discountExpired ? '#ffe5e5' : '#e8f5e9' }}>
+      <Paper 
+        elevation={3} 
+        sx={{ 
+          padding: 3, 
+          backgroundColor: discountExpired ? '#ffe5e5' : '#e8f5e9', 
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
         {!discountExpired ? (
           <>
             <Typography 
@@ -61,6 +69,7 @@ export const DiscountCountdown = () => {
               color="primary" 
               gutterBottom
               fontWeight="bold"
+              sx={{ fontSize: { xs: '1.5rem', sm: '2rem' } }}  // Adaptable a pantallas pequeñas
             >
               ¡Descuento exclusivo!
             </Typography>
@@ -68,10 +77,15 @@ export const DiscountCountdown = () => {
               variant="h6" 
               color="secondary"
               gutterBottom
+              sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}  // Adaptable a pantallas pequeñas
             >
               ¡40% de descuento en tu compra si nos escribes dentro de los próximos <strong>5 minutos!</strong>
             </Typography>
-            <Typography variant="body1" mb={2}>
+            <Typography 
+              variant="body1" 
+              mb={2}
+              sx={{ fontSize: { xs: '0.875rem', sm: '1rem' } }}  // Adaptable a pantallas pequeñas
+            >
               Escríbenos por WhatsApp para aprovechar este descuento exclusivo.
             </Typography>
             <Typography 
@@ -79,6 +93,7 @@ export const DiscountCountdown = () => {
               color="error" 
               fontWeight="bold" 
               mb={3}
+              sx={{ fontSize: { xs: '1.25rem', sm: '1.5rem' } }}  // Adaptable a pantallas pequeñas
             >
               Tiempo restante: {formatTime(timeLeft)}
             </Typography>
@@ -89,6 +104,7 @@ export const DiscountCountdown = () => {
               target="_blank" 
               rel="noopener noreferrer"
               size="large"
+              sx={{ width: { xs: '100%', sm: 'auto' } }}  // Botón más grande en pantallas pequeñas
             >
               ¡Quiero mi descuento!
             </Button>
@@ -100,10 +116,15 @@ export const DiscountCountdown = () => {
               color="error" 
               gutterBottom
               fontWeight="bold"
+              sx={{ fontSize: { xs: '1.5rem', sm: '2rem' } }}  // Adaptable a pantallas pequeñas
             >
               Lo sentimos, el descuento ha expirado.
             </Typography>
-            <Typography variant="body1" mb={2}>
+            <Typography 
+              variant="body1" 
+              mb={2}
+              sx={{ fontSize: { xs: '0.875rem', sm: '1rem' } }}  // Adaptable a pantallas pequeñas
+            >
               De todos modos, ¡contáctanos para conocer otras ofertas!
             </Typography>
             <Button 
@@ -113,6 +134,7 @@ export const DiscountCountdown = () => {
               target="_blank" 
               rel="noopener noreferrer"
               size="large"
+              sx={{ width: { xs: '100%', sm: 'auto' } }}  // Botón más grande en pantallas pequeñas
             >
               Contactar por WhatsApp
             </Button>
@@ -122,5 +144,3 @@ export const DiscountCountdown = () => {
     </Box>
   );
 };
-
-
