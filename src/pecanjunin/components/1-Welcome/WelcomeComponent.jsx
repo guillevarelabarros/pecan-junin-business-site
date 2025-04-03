@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
 
 export const WelcomeComponent = () => {
@@ -17,8 +16,8 @@ export const WelcomeComponent = () => {
       }}
     >
       <Typography
-        variant="h3"
-        component="h1"
+        variant='h3'
+        component='h1'
         gutterBottom
         sx={{
           fontWeight: 'bold',
@@ -29,8 +28,8 @@ export const WelcomeComponent = () => {
         ¡Bienvenidos a Pecan Junín!
       </Typography>
       <Typography
-        variant="h5"
-        component="p"
+        variant='h5'
+        component='p'
         sx={{
           mb: 2,
           fontSize: { xs: '1.25rem', sm: '1.5rem' }, // Ajuste de tamaño según la pantalla
@@ -39,8 +38,8 @@ export const WelcomeComponent = () => {
         Nueces Pecan, frescas y deliciosas
       </Typography>
       <Typography
-        variant="body1"
-        component="p"
+        variant='body1'
+        component='p'
         sx={{
           fontSize: { xs: '1rem', sm: '1.25rem' }, // Ajuste de tamaño según la pantalla
           mb: 4,
@@ -51,13 +50,13 @@ export const WelcomeComponent = () => {
       <Stack
         direction={{ xs: 'column', sm: 'row' }} // Columna en pantallas pequeñas, fila en grandes
         spacing={2}
-        justifyContent="center"
+        justifyContent='center'
       >
         <Button
-          variant="outlined"
-          color="inherit"
-          size="large"
-          href="#productos"
+          variant='outlined'
+          color='inherit'
+          size='large'
+          href='#productos'
           sx={{
             borderColor: 'white',
             color: 'white',
@@ -71,12 +70,12 @@ export const WelcomeComponent = () => {
           Ver Nueces
         </Button>
         <Button
-          variant="contained"
-          color="secondary"
-          size="large"
-          href="https://wa.me/542364658923"
-          target="_blank"
-          rel="noopener noreferrer"
+          variant='contained'
+          color='secondary'
+          size='large'
+          href='https://wa.me/542364658923'
+          target='_blank'
+          rel='noopener noreferrer'
           sx={{
             width: { xs: '100%', sm: 'auto' }, // Botón ocupa todo el ancho en pantallas pequeñas
           }}
