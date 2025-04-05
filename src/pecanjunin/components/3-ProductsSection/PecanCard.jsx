@@ -10,7 +10,7 @@ import {
   Button,
 } from '@mui/material';
 
-// Función para dividir el texto cada 30 caracteres
+// Función para dividir el texto cada X caracteres
 const splitText = (text, maxLength) => {
   const result = [];
   for (let i = 0; i < text.length; i += maxLength) {
@@ -21,8 +21,8 @@ const splitText = (text, maxLength) => {
 
 // Componente PecanCard
 const PecanCard = ({ title, detail, image }) => {
-  const titleParts = splitText(title, 20); // Ajusta el número de caracteres para el título
-  const detailParts = splitText(detail, 30); // Cada 30 caracteres para el detalle
+  const titleParts = splitText(title, 20);
+  const detailParts = splitText(detail, 30);
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -44,7 +44,6 @@ const PecanCard = ({ title, detail, image }) => {
           height: '100%',
         }}
       >
-        {/* Imagen del producto */}
         <CardMedia
           component='img'
           sx={{
@@ -57,7 +56,6 @@ const PecanCard = ({ title, detail, image }) => {
           alt={title}
         />
 
-        {/* Contenido del Card */}
         <CardContent
           sx={{
             flexGrow: 1,
@@ -68,7 +66,6 @@ const PecanCard = ({ title, detail, image }) => {
             height: '100%',
           }}
         >
-          {/* Título con área fija */}
           <Box
             sx={{
               height: '3rem',
@@ -80,7 +77,7 @@ const PecanCard = ({ title, detail, image }) => {
             {titleParts.map((part, index) => (
               <Typography
                 key={index}
-                variant={index === 0 ? 'h5' : 'body1'} // Cambia el estilo para el segundo párrafo
+                variant={index === 0 ? 'h5' : 'body1'}
                 component='div'
                 gutterBottom
                 align='center'
@@ -99,7 +96,6 @@ const PecanCard = ({ title, detail, image }) => {
             ))}
           </Box>
 
-          {/* Detalle con flexGrow para ocupar el espacio restante */}
           <Box
             sx={{
               flexGrow: 1,
@@ -128,9 +124,14 @@ const PecanCard = ({ title, detail, image }) => {
           </Box>
         </CardContent>
 
-        {/* Botón en las acciones del Card */}
         <CardActions sx={{ justifyContent: 'center', paddingBottom: 2 }}>
-          <Button variant='contained' color='primary'>
+          <Button
+            variant='contained'
+            color='primary'
+            href='https://wa.me/c/5492364514628'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Comprar
           </Button>
         </CardActions>
@@ -139,82 +140,45 @@ const PecanCard = ({ title, detail, image }) => {
   );
 };
 
-// Lista de productos de ejemplo
-// Lista de productos actualizada
-// Lista de productos actualizada con nuevas rutas de imagen
+// Lista de productos
 const products = [
-  {
-    title: 'Almendras premium',
-    detail: '250 gr - $5500',
-    image: '/assets/products/Almendras-premium-250-gr-$5500.jpg',
-  },
-  {
-    title: 'Mix clásico',
-    detail: '100 gr - $2000',
-    image: '/assets/products/Mix-clasico-100-gr-$2000.jpg',
-  },
-  {
-    title: 'Mix clásico',
-    detail: '250 gr - $4300',
-    image: '/assets/products/Mix-clasico-250-gr-$4300.jpg',
-  },
   {
     title: 'Mix clásico',
     detail: '500 gr - $8000',
     image: '/assets/products/Mix-clasico-500-gr-$8000.jpg',
   },
   {
-    title: 'Mix premium sin maní',
-    detail: '100 gr - $2300',
-    image: '/assets/products/Mix-premium-sin-mani-100-gr-$2300.jpg',
-  },
-  {
-    title: 'Mix premium sin maní',
-    detail: '250 gr - $2500',
-    image: '/assets/products/Mix-Premium-sin-mani-250-gr-$2500.jpg',
-  },
-  {
-    title: 'Mix premium sin maní',
+    title: 'Mix sin maní',
     detail: '500 gr - $9000',
     image: '/assets/products/Mix-Premium-sin-mani-500-gr-$9000.jpg',
   },
   {
-    title: 'Mix premium sin pasas',
-    detail: '100 gr - $2300',
-    image: '/assets/products/Mix-premium-sin-pasas-100-gr-$2300.jpg',
-  },
-  {
-    title: 'Mix premium sin pasas',
-    detail: '250 gr - $5000',
-    image: '/assets/products/Mix-premium-sin-pasas-250-gr-$5000.jpg',
-  },
-  {
-    title: 'Mix premium sin pasas',
+    title: 'Mix sin pasas',
     detail: '500 gr - $9000',
     image: '/assets/products/Mix-premium-sin-pasas-500-gr-$9000.jpg',
   },
   {
-    title: 'Nueces Pecan caramelizadas',
-    detail: '80 gr - $2500',
+    title: 'Nueces Caramelizadas',
+    detail: '80 gr - $3000',
     image: '/assets/products/Nueces-Pecan-caramelizadas-80-gr-$2500.jpg',
   },
   {
-    title: 'Nueces Pecan caramelizadas',
+    title: 'Nueces Caramelizadas',
     detail: '250 gr - $7000',
     image: '/assets/products/Nueces-Pecan-Caramelizadas-250-gr-$7000.jpg',
   },
   {
-    title: 'Nueces Pecan caramelizadas',
-    detail: '500 gr - $12000',
+    title: 'Nueces Caramelizadas',
+    detail: '500 gr - $13000',
     image: '/assets/products/Nueces-Pecan-Caramelizadas-500-gr-$12000.jpg',
   },
   {
-    title: 'Nueces pecan premium',
+    title: 'Nueces pecan',
     detail: '250 gr - $5500',
     image: '/assets/products/Nueces-pecan-premium-250-gr-$5500.jpg',
   },
   {
-    title: 'Castañas de Cajú natural',
+    title: 'Castañas de Cajú',
     detail: '250 gr - $5500',
     image: '/assets/products/Castañas-de-Caju-natural-250-gr-$5500.jpg',
   },
@@ -229,7 +193,7 @@ const PecanCardList = () => {
           key={index}
           xs={12}
           sm={6}
-          md={4} // Esto asegura que cada card tenga 1/3 del ancho en pantallas grandes
+          md={4}
           sx={{
             display: 'flex',
             justifyContent: 'center',

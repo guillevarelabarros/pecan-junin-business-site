@@ -2,12 +2,12 @@ import { Typography, Box } from '@mui/material';
 
 export const ProductTitles = () => {
   return (
-    <Box id="productos" mb={5} sx={{ paddingX: { xs: 2, sm: 4, md: 6 } }}>
+    <Box id='productos' mb={5} sx={{ paddingX: { xs: 2, sm: 4, md: 6 } }}>
       {/* Título principal */}
       <Typography
-        variant="h2"
-        component="h1"
-        textAlign="center"
+        variant='h2'
+        component='h1'
+        textAlign='center'
         mb={4}
         sx={{
           fontWeight: 'bold',
@@ -25,9 +25,9 @@ export const ProductTitles = () => {
 
       {/* Subtítulo para Nueces Pecan comunes */}
       <Typography
-        variant="h3"
-        component="h2"
-        textAlign="center"
+        variant='h3'
+        component='h2'
+        textAlign='center'
         mb={4}
         sx={{
           fontWeight: 'medium',
@@ -40,7 +40,7 @@ export const ProductTitles = () => {
           },
         }}
       >
-        Nueces Pecan
+        Frutos Secos + Nuez Pecán + Caramelizadas.
       </Typography>
     </Box>
   );

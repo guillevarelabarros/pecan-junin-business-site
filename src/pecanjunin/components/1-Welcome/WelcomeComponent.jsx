@@ -35,7 +35,7 @@ export const WelcomeComponent = () => {
           fontSize: { xs: '1.25rem', sm: '1.5rem' }, // Ajuste de tamaño según la pantalla
         }}
       >
-        Nueces Pecan, frescas y deliciosas
+        Nueces Pecan, frescas y deliciosas.
       </Typography>
       <Typography
         variant='body1'
@@ -73,7 +73,7 @@ export const WelcomeComponent = () => {
           variant='contained'
           color='secondary'
           size='large'
-          href='https://wa.me/542364658923'
+          href='https://wa.me/c/5492364514628'
           target='_blank'
           rel='noopener noreferrer'
           sx={{
