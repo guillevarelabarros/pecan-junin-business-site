@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Card,
   CardMedia,
@@ -132,7 +131,7 @@ const PecanCard = ({ title, detail, image }) => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Comprar
+            Buy now!
           </Button>
         </CardActions>
       </Card>
@@ -143,43 +142,43 @@ const PecanCard = ({ title, detail, image }) => {
 // Lista de productos
 const products = [
   {
-    title: 'Mix clásico',
-    detail: '500 gr - $8000',
+    title: 'Classic Mix',
+    detail: '500 g - $8000',
     image: '/assets/products/Mix-clasico-500-gr-$8000.jpg',
   },
   {
-    title: 'Mix sin maní',
-    detail: '500 gr - $9000',
+    title: 'Mix without Peanuts',
+    detail: '500 g - $9000',
     image: '/assets/products/Mix-Premium-sin-mani-500-gr-$9000.jpg',
   },
   {
-    title: 'Mix sin pasas',
-    detail: '500 gr - $9000',
+    title: 'Mix without Raisins',
+    detail: '500 g - $9000',
     image: '/assets/products/Mix-premium-sin-pasas-500-gr-$9000.jpg',
   },
   {
-    title: 'Nueces Caramelizadas',
-    detail: '80 gr - $3000',
+    title: 'Caramelized Pecans',
+    detail: '80 g - $3000',
     image: '/assets/products/Nueces-Pecan-caramelizadas-80-gr-$2500.jpg',
   },
   {
-    title: 'Nueces Caramelizadas',
-    detail: '250 gr - $7000',
+    title: 'Caramelized Pecans',
+    detail: '250 g - $7000',
     image: '/assets/products/Nueces-Pecan-Caramelizadas-250-gr-$7000.jpg',
   },
   {
-    title: 'Nueces Caramelizadas',
-    detail: '500 gr - $13000',
+    title: 'Caramelized Pecans',
+    detail: '500 g - $13000',
     image: '/assets/products/Nueces-Pecan-Caramelizadas-500-gr-$12000.jpg',
   },
   {
-    title: 'Nueces pecan',
-    detail: '250 gr - $5500',
+    title: 'Pecan Nuts',
+    detail: '250 g - $5500',
     image: '/assets/products/Nueces-pecan-premium-250-gr-$5500.jpg',
   },
   {
-    title: 'Castañas de Cajú',
-    detail: '250 gr - $5500',
+    title: 'Cashew Nuts',
+    detail: '250 g - $5500',
     image: '/assets/products/Castañas-de-Caju-natural-250-gr-$5500.jpg',
   },
 ];

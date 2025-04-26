@@ -25,7 +25,7 @@ export const WelcomeComponent = () => {
           fontSize: { xs: '2rem', sm: '3rem' }, // Ajuste de tamaño según la pantalla
         }}
       >
-        ¡Bienvenidos a Pecan Junín!
+        Welcome to Pecan Junín!
       </Typography>
       <Typography
         variant='h5'
@@ -35,7 +35,7 @@ export const WelcomeComponent = () => {
           fontSize: { xs: '1.25rem', sm: '1.5rem' }, // Ajuste de tamaño según la pantalla
         }}
       >
-        Nueces Pecan, frescas y deliciosas.
+        Fresh and Delicious Pecan Nuts.
       </Typography>
       <Typography
         variant='body1'
@@ -45,7 +45,7 @@ export const WelcomeComponent = () => {
           mb: 4,
         }}
       >
-        Directo de nuestro campo a tu mesa - Calidad garantizada en cada nuez.
+        From Our Farm to Your Table – Guaranteed Quality in Every Nut.
       </Typography>
       <Stack
         direction={{ xs: 'column', sm: 'row' }} // Columna en pantallas pequeñas, fila en grandes
@@ -67,7 +67,7 @@ export const WelcomeComponent = () => {
             width: { xs: '100%', sm: 'auto' }, // Botón ocupa todo el ancho en pantallas pequeñas
           }}
         >
-          Ver Nueces
+          View Nuts
         </Button>
         <Button
           variant='contained'
@@ -80,7 +80,7 @@ export const WelcomeComponent = () => {
             width: { xs: '100%', sm: 'auto' }, // Botón ocupa todo el ancho en pantallas pequeñas
           }}
         >
-          ¡Comprar Ahora!
+          Shop Now!
         </Button>
       </Stack>
     </Box>

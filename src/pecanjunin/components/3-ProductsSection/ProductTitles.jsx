@@ -20,7 +20,7 @@ export const ProductTitles = () => {
           },
         }}
       >
-        Nuestros productos
+        Our Products
       </Typography>
 
       {/* Subtítulo para Nueces Pecan comunes */}
@@ -40,7 +40,7 @@ export const ProductTitles = () => {
           },
         }}
       >
-        Frutos Secos + Nuez Pecán + Caramelizadas.
+        Dried Fruits + Pecan Nuts + Caramelized Pecans.
       </Typography>
     </Box>
   );
