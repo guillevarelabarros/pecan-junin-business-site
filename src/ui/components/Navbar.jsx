@@ -34,7 +34,7 @@ export const Navbar = () => {
         >
           <Box
             component='img'
-            src='/assets/pecanes/logo.png'
+            src='assets/pecanes/logo.png'
             alt='Pecan Junín Logo'
             sx={{ width: 40, height: 'auto', mr: 1 }}
           />

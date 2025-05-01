@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 
 export const AboutComponent = () => {
-  const pecanImageUrl = `/assets/pecanes/logo2png.png`;
+  const pecanImageUrl = `assets/pecanes/logo2png.png`;
 
   return (
     <Box
