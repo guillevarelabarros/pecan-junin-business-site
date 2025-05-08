@@ -3,10 +3,10 @@
 ![Project Preview](./assets/website/website1.png)
 
 **Pecan Junín** is a real-world business website built with **React**, **React
-Router**, **Material UI**, and **Emotion**, designed to promote and sell
-pecan-based products and dried fruit mixes from our family farm in Junín,
-Argentina. It includes **WhatsApp integration**, **countdown promotions**, and a
-fully **responsive design** optimized for mobile and tablets.
+Router**, **Material UI**, designed to promote and sell pecan-based products and
+dried fruit mixes from our family farm in Junín, Argentina. It includes
+**WhatsApp integration**, **countdown promotions**, and a fully **responsive
+design** optimized for mobile and tablets.
 
 > 💼 Created as part of my frontend portfolio to demonstrate skills in modern UI
 > design and frontend architecture.
@@ -23,16 +23,13 @@ WhatsApp integration.
 
 ## 🚀 Live Demo
 
-👉 [Visit the live site](https://your-deploy-link.netlify.app) ← _(replace with
-your actual Netlify/Vercel URL)_
-
----
+## 👉 [Visit the live site](https://pecan-junin.netlify.app/)
 
 ## 🧠 Features
 
 - ✅ **Fully responsive layout** with mobile-first approach
 - ✅ Built using **React + Vite**
-- ✅ Styled with **Material UI + Emotion**
+- ✅ Styled with **Material UI**
 - ✅ Modular structure with reusable components
 - ✅ Product cards, price listings and CTA buttons
 - ✅ Floating buttons for **Instagram, WhatsApp, and Facebook**
@@ -71,7 +68,6 @@ WelcomeComponent.jsx │ ├── 2-AboutUs/ │ │ └── AboutComponent.j
 - **React** with functional components
 - **Vite** for fast dev environment
 - **Material UI (MUI)** for UI components
-- **Emotion** for custom styles
 - **React Router v6** for routing
 - **CSS Modules** for floating buttons
 - **Responsive design** using MUI's `sx` props and breakpoints
@@ -92,14 +88,17 @@ yarn
 
 # Start development server
 yarn dev
-
-
-📣 Contact
-You can reach out to me at:
-GitHub: @guillevarelabarros
-
-📌 Notes
-This project was developed both as a real-world business website and a showcase of frontend development skills, focusing on modularity, performance, and mobile responsiveness.
-
-If you're hiring a frontend developer who knows how to build production-ready UIs using React, Material UI, and routing systems — let's talk! 🚀
 ```
+
+## 📣 Contact
+
+You can reach out to me at: GitHub: https://github.com/guillevarelabarros
+
+## 📌 Notes
+
+This project was developed both as a real-world business website and a showcase
+of frontend development skills, focusing on modularity, performance, and mobile
+responsiveness.
+
+If you're hiring a frontend developer who knows how to build production-ready
+UIs using React, Material UI, and routing systems — let's talk! 🚀
