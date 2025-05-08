@@ -90,9 +90,10 @@ yarn
 yarn dev
 ```
 
-## 📣 Contact
+## 🧑‍💻 Author
 
-You can reach out to me at: GitHub: https://github.com/guillevarelabarros
+**Guille Varela Barros** – [LinkedIn](www.linkedin.com/in/guillevarelabarros) |
+[Github](https://github.com/guillevarelabarros)
 
 ## 📌 Notes
 
