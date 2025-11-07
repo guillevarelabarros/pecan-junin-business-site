@@ -1,6 +1,13 @@
 # 🥜 Pecan Junín – Responsive Product Showcase Built with React & MUI
 
-![Project Preview](./assets/website/website1.png)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Material UI](https://img.shields.io/badge/Material%20UI-5-007FFF?logo=mui&logoColor=white)](https://mui.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+---
+
+## 🧠 About the Project
 
 **Pecan Junín** is a real-world business website built with **React**, **React
 Router**, **Material UI**, designed to promote and sell pecan-based products and
@@ -11,7 +18,19 @@ design** optimized for mobile and tablets.
 > 💼 Created as part of my frontend portfolio to demonstrate skills in modern UI
 > design and frontend architecture.
 
----
+## 🚀 Live Demo
+
+👉 [Visit the live site](https://pecan-junin.netlify.app/)
+
+## 🖼️ Preview
+
+### 💚 Homepage
+
+![Homepage Screenshot](./assets/website/website1.png)
+
+### 🧺 Products
+
+![Product Cards](./assets/website/website2.png)
 
 ## 🧠 What I Learned
 
@@ -20,10 +39,6 @@ This project helped me solidify skills in **responsive UI with Material UI**,
 WhatsApp integration.
 
 ---
-
-## 🚀 Live Demo
-
-## 👉 [Visit the live site](https://pecan-junin.netlify.app/)
 
 ## 🧠 Features
 
@@ -41,25 +56,45 @@ WhatsApp integration.
 
 ## 🧱 Project Structure
 
-src/ ├── main.jsx ├── theme.js ├── styless.css ├── router/ │ └── AppRouter.jsx
-├── ui/ │ └── components/ │ └── Navbar.jsx ├── pecanjunin/ │ ├── index.js │ ├──
-pages/ │ │ └── HomePage.jsx │ └── components/ │ ├── 1-Welcome/ │ │ └──
-WelcomeComponent.jsx │ ├── 2-AboutUs/ │ │ └── AboutComponent.jsx │ ├──
-3-ProductsSection/ │ │ ├── PecanCard.jsx │ │ └── ProductTitles.jsx │ ├──
-4-Discount-Promotions/ │ │ └── DiscountCountdown.jsx │ └── 5-SocialMediaButtons/
-│ ├── FacebookButton.jsx │ ├── InstagramButton.jsx │ └── WhatsAppButton.jsx
+```
+src/
+├── main.jsx
+├── theme.js
+├── styless.css
+│
+├── router/
+│   └── AppRouter.jsx
+│
+├── ui/
+│   └── components/
+│       └── Navbar.jsx
+│
+├── pecanjunin/
+│   ├── index.js
+│   │
+│   ├── pages/
+│   │   └── HomePage.jsx
+│   │
+│   └── components/
+│       ├── 1-Welcome/
+│       │   └── WelcomeComponent.jsx
+│       │
+│       ├── 2-AboutUs/
+│       │   └── AboutComponent.jsx
+│       │
+│       ├── 3-ProductsSection/
+│       │   ├── PecanCard.jsx
+│       │   └── ProductTitles.jsx
+│       │
+│       ├── 4-Discount-Promotions/
+│       │   └── DiscountCountdown.jsx
+│       │
+│       └── 5-SocialMediaButtons/
+│           ├── FacebookButton.jsx
+│           ├── InstagramButton.jsx
+│           └── WhatsAppButton.jsx
 
----
-
-## 🖼️ Preview
-
-### 💚 Homepage
-
-![Homepage Screenshot](./assets/website/website1.png)
-
-### 🧺 Products
-
-![Product Cards](./assets/website/website2.png)
+```
 
 ---
 
@@ -92,8 +127,17 @@ yarn dev
 
 ## 🧑‍💻 Author
 
-**Guille Varela Barros** – [LinkedIn](www.linkedin.com/in/guillevarelabarros) |
-[Github](https://github.com/guillevarelabarros)
+**Guille Varela Barros**
+
+- 🔗 LinkedIn: https://www.linkedin.com/in/guillevarelabarros
+
+- 💻 GitHub: https://github.com/guillevarelabarros
+
+## 🔗 Useful Links
+
+- 📹 Demo: https://pecan-junin.netlify.app/
+
+- 💻 Repository: https://github.com/guillevarelabarros/pecan-junin-business-site
 
 ## 📌 Notes
 
